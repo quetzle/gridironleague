@@ -195,7 +195,7 @@ var leagueObject = {
 						{
 							"city": "Seattle",
 							"abbreviation": "SEA",
-							"names": [ "Osprey", "Seagulls", "Totems", "Spacemen", "Emeralds", "Rainiers", "Beans" ]
+							"names": [ "Ospreys", "Seagulls", "Totems", "Spacemen", "Emeralds", "Rainiers", "Beans" ]
 						}, {
 							"city": "Portland",
 							"abbreviation": "POR",
