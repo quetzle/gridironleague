@@ -1,0 +1,360 @@
+var leagueObject = {
+	"title": "Gridiron League",
+	"conferences": [
+		{
+			"name": "Eastern",
+			"divisions": [
+				{
+					"name": "Northeast",
+					"teams": [
+						{
+							"city": "New York",
+							"abbreviation": "NY",
+							"names": [ "Nightingales", "Neon", "Nighthawks", "Titans", "Apples", "Empire" ]
+						}, {
+							"city": "Albany",
+							"abbreviation": "ALB",
+							"names": [ "Alphas", "Apollos", "Attack", "Apes", "Mohawks", "Hudsons" ]
+						}, {
+							"city": "New Jersey",
+							"abbreviation": "NJ",
+							"names": [ "Boys", "Turnpikes", "Shore", "Mikes", "Junkers", "Joints" ]
+						}, {
+							"city": "Boston",
+							"abbreviation": "BOS",
+							"names": [ "Beans", "Brewers", "Cheers", "Marathoners", "Bastions", "Creme" ]
+						}, {
+							"city": "Providence",
+							"abbreviation": "PRO",
+							"names": [ "Prosecutors", "Punks", "Pros", "Priests", "Piledrivers", "Paragons" ]
+						}, {
+							"city": "Montreal",
+							"abbreviation": "MON",
+							"names": [ "Olympians", "Royals", "Frenchies", "Saints", "Marys" ]
+						}, {
+							"city": "Quebec City",
+							"abbreviation": "QC",
+							"names": [ "Queens", "Quacks", "Moose", "Caribou", "Aurora", "Velocity" ]
+						}, {
+							"city": "Philadelphia",
+							"abbreviation": "PHI",
+							"names": [ "Bells", "Patriots", "Cheesesteaks", "Freedom", "Liberty", "Filibusters" ]
+						}, {
+							"city": "Pittsburgh",
+							"abbreviation": "PIT",
+							"names": [ "Iron", "Condiments", "Punks", "Power", "Panthers" ]
+						}, {
+							"city": "Long Island",
+							"abbreviation": "LI",
+							"names": [ "Lions", "Lizards", "Losers", "Licks", "Clams", "Lunchmeat" ]
+						}
+					]
+				}, {
+					"name": "Lakes",
+					"teams": [
+						{
+							"city": "Detroit",
+							"abbreviation": "DET",
+							"names": [ "Destroyers", "Dynamite", "Dinosaurs", "Factory", "Doom", "Autos" ]
+						}, {
+							"city": "Minneapolis",
+							"abbreviation": "MIN",
+							"names": [ "Minnows", "Munchers", "Magpies", "Macaws", "Marauders", "Monarchs" ]
+						}, {
+							"city": "Ann Arbor",
+							"abbreviation": "AA",
+							"names": [ "Alphas", "Acorns", "Aliens", "Andies", "Alcoholics" ]
+						}, {
+							"city": "Columbus",
+							"abbreviation": "COL",
+							"names": [ "Crushers", "Canines", "Explorers", "Cool Guys", "92ers" ]
+						}, {
+							"city": "Cleveland",
+							"abbreviation": "CLE",
+							"names": [ "Cleavers", "Collapse", "Clumps", "Kooks", "Cranes", "Crime" ]
+						}, {
+							"city": "Cincinnati",
+							"abbreviation": "CIN",
+							"names": [ "Emperors", "Caesars", "Chili", "Sonics", "Slicers", "Supers" ]
+						}, {
+							"city": "Chicago",
+							"abbreviation": "CHI",
+							"names": [ "Grizzlies", "Fire", "Pizzeria", "Matadors", "Illini", "Skyscrapers" ]
+						}, {
+							"city": "Indianapolis",
+							"abbreviation": "IND",
+							"names": [ "Horses", "500s", "Circles", "Motors", "Mayflowers" ]
+						}, {
+							"city": "Toronto",
+							"abbreviation": "TOR",
+							"names": [ "Drakes", "Sixers", "Hogs", "Smoke", "Queens", "Tyrants" ]
+						}, {
+							"city": "Milwaukee",
+							"abbreviation": "MIL",
+							"names": [ "Drunks", "Frauds", "Reds", "Hacks", "Creamers", "Beers" ]
+						}
+					]
+				}, {
+					"name": "Central",
+					"teams": [
+						{
+							"city": "Virginia Beach",
+							"abbreviation": "VB",
+							"names": [ "Generals", "Captains", "Jets", "Neptunes", "Dolphins", "Surf", "Tides" ]
+						}, {
+							"city": "Washington",
+							"abbreviation": "WAS",
+							"names": [ "Warhawks", "Wackos", "Warriors", "Redhawks", "Potatoes", "Senators", "Waste" ]
+						}, {
+							"city": "Memphis",
+							"abbreviation": "MEM",
+							"names": [ "Pharaohs", "Gods", "Clash", "Monsters", "Mafia", "Wolves" ]
+						}, {
+							"city": "Charlotte",
+							"abbreviation": "CHA",
+							"names": [ "Churches", "Heat", "Chompers", "Shoes", "Shade", "Champions" ]
+						}, {
+							"city": "Raleigh",
+							"abbreviation": "RAL",
+							"names": [ "Oaks", "Rally", "Rams", "Hurricanes", "Radars", "Riot" ]
+						}, {
+							"city": "London",
+							"abbreviation": "LON",
+							"names": [ "Monarchs", "Kings", "Queens", "Jaguars", "Silly-Nannies", "Knights", "Cavalry", "Lions" ]
+						}, {
+							"city": "Louisville",
+							"abbreviation": "LOU",
+							"names": [ "Derby", "Links", "Life", "Lights", "Loops", "Lions", "Slugs" ]
+						}, {
+							"city": "Nashville",
+							"abbreviation": "NAS",
+							"names": [ "Athenians", "Strummers", "Nighthawks", "Jam", "Annihilators", "Nerds" ]
+						}, {
+							"city": "Baltimore",
+							"abbreviation": "BAL",
+							"names": [ "Crows", "Brigadiers", "Bandoliers", "Crabcakes", "Charmers", "Boaters" ]
+						}, {
+							"city": "Charleston",
+							"abbreviation": "CHS",
+							"names": [ "Chews", "Miners", "Charity", "Chucks", "Chuggers" ]
+						}
+					]
+				}, {
+					"name": "Southeast",
+					"teams": [
+						{
+							"city": "Atlanta",
+							"abbreviation": "ATL",
+							"names": [ "Aliens", "Colas", "Outcasts", "Attack", "Dogwoods", "Airships" ]
+						}, {
+							"city": "Savannah",
+							"abbreviation": "SAV",
+							"names": [ "Tigers", "Zebras", "Pinks", "Leopards", "Lions", "Vultures" ]
+						}, {
+							"city": "Mobile",
+							"abbreviation": "MOB",
+							"names": [ "Mob", "Mongrels", "Homes", "Tornados", "Monsters", "Machine" ]
+						}, {
+							"city": "Jacksonville",
+							"abbreviation": "JAX",
+							"names": [ "Jousters", "Jesters", "Jokers", "Juicers", "Jaxons" ]
+						}, {
+							"city": "Tallahassee",
+							"abbreviation": "TAL",
+							"names": [ "Titans", "Tanks", "Technics", "Tattoos", "Terror", "Tinies", "Lassies" ]
+						}, {
+							"city": "Pensacola",
+							"abbreviation": "PEN",
+							"names": [ "Panthers", "Privateers", "Pros", "Power", "Snappers", "Blue Angels" ]
+						}, {
+							"city": "Havana",
+							"abbreviation": "HAV",
+							"names": [ "Cigars", "Hotels", "Gamblers", "Galleons", "Columns", "Hurricanes" ]
+						}, {
+							"city": "Huntsville",
+							"abbreviation": "HUN",
+							"names": [ "Rockets", "Missiles", "Saturns", "Stars", "Redstone", "Jupiters" ]
+						}, {
+							"city": "Birmingham",
+							"abbreviation": "BIR",
+							"names": [ "Magic", "Pigs", "Steelers", "Iron", "Railcars", "Bombers" ]
+						}, {
+							"city": "Miami",
+							"abbreviation": "MIA",
+							"names": [ "Magic", "Marines", "Vice Cops", "Music", "Moguls", "Waves", "Cruisers" ]
+						}
+					]
+				}
+			]
+		}, {
+			"name": "Western",
+			"divisions": [
+				{
+					"name": "Northwest",
+					"teams": [
+						{
+							"city": "Seattle",
+							"abbreviation": "SEA",
+							"names": [ "Osprey", "Seagulls", "Totems", "Spacemen", "Emeralds", "Rainiers", "Beans" ]
+						}, {
+							"city": "Portland",
+							"abbreviation": "POR",
+							"names": [ "Punks", "Roses", "Stumps", "Pioneers", "Cascades", "Points", "Pins" ]
+						}, {
+							"city": "Salt Lake",
+							"abbreviation": "SLC",
+							"names": [ "Saints", "Utes", "Sandpipers", "Swans", "Crackers", "Pearls" ]
+						}, {
+							"city": "Eugene",
+							"abbreviation": "EUG",
+							"names": [ "Eurekas", "Eradicators", "Elves", "Geniuses", "Emeralds" ]
+						}, {
+							"city": "Twin Peaks",
+							"abbreviation": "TP",
+							"names": [ "Lumberjacks", "Lodge", "Steeplejacks", "Millers", "Sycamores", "Owls" ]
+						}, {
+							"city": "Billings",
+							"abbreviation": "BIL",
+							"names": [ "Blasters", "Blazers", "Bandits", "Bunkers", "Spelunkers", "Bears" ]
+						}, {
+							"city": "Boise",
+							"abbreviation": "BOI",
+							"names": [ "Bunkers", "Treasure", "Benchers", "Bogus Boys", "Blaze", "Bang" ]
+						}, {
+							"city": "Vancouver",
+							"abbreviation": "VAN",
+							"names": [ "Villains", "Violence", "Velocity", "Terminators", "Violets", "Vipers" ]
+						}, {
+							"city": "Spokane",
+							"abbreviation": "SPO",
+							"names": [ "Spots", "Sun", "Lilacs", "Spunk", "Speedsters", "Sockeyes" ]
+						}
+					]
+				}, {
+					"name": "Coast",
+					"teams": [
+						{
+							"city": "San Francisco",
+							"abbreviation": "SF",
+							"names": [ "Goldrush", "Silicon", "Supreme", "Foghorns", "Sourdoughs" ]
+						}, {
+							"city": "Los Angeles",
+							"abbreviation": "LA",
+							"names": [ "Goats", "Stars", "Steeds", "Goslings", "Oranges", "Cherubs" ]
+						}, {
+							"city": "San Diego",
+							"abbreviation": "SD",
+							"names": [ "Hound Dogs", "Defenders", "Destroyers", "Dynamite", "Admirals" ]
+						}, {
+							"city": "Tucson",
+							"abbreviation": "TUC",
+							"names": [ "Trains", "Tanks", "Pueblos", "Sentinels", "Torturers", "Tigers" ]
+						}, {
+							"city": "Las Vegas",
+							"abbreviation": "LV",
+							"names": [ "Gamblers", "Vigilantes", "Sinners", "Slots", "Cigarettes", "Cacti" ]
+						}, {
+							"city": "Phoenix",
+							"abbreviation": "PHO",
+							"names": [ "Saguaros", "Flamethrowers", "Fireballs", "Froggies", "Firefighters" ]
+						}, {
+							"city": "Sacramento",
+							"abbreviation": "SAC",
+							"names": [ "Saints", "Salamanders", "Saviors", "Swordsmen", "Journeymen" ]
+						}, {
+							"city": "Honolulu",
+							"abbreviation": "HON",
+							"names": [ "Surfers", "Pineapples", "Humuhumus", "Ohana", "Diamonds", "Islanders" ]
+						}, {
+							"city": "San Jose",
+							"abbreviation": "SJ",
+							"names": [ "Hooligans", "Highlife", "Hawks", "Hikers", "Hermetics", "Hobos" ]
+						}
+					]
+				}, {
+					"name": "Plains",
+					"teams": [
+						{
+							"city": "Fargo",
+							"abbreviation": "FAR",
+							"names": [ "Snowfall", "Flankers", "Funnies", "Snowmen", "Hares" ]
+						}, {
+							"city": "Sioux Falls",
+							"abbreviation": "SIO",
+							"names": [ "Stallions", "Hearts", "Cavalry", "Greens", "Stonemen" ]
+						}, {
+							"city": "Lincoln",
+							"abbreviation": "LIN",
+							"names": [ "Abes", "Pennies", "Memorials", "Monuments", "Honor", "Stars" ]
+						}, {
+							"city": "Omaha",
+							"abbreviation": "OMA",
+							"names": [ "Reubens", "Bulls", "Pilots", "Overlords", "Oracle" ]
+						}, {
+							"city": "Des Moines",
+							"abbreviation": "DM",
+							"names": [ "Dragons", "Raccoons", "Badgers", "Delights", "Daybirds" ]
+						}, {
+							"city": "Denver",
+							"abbreviation": "DEN",
+							"names": [ "Dunkers", "Doves", "Chargers", "Greens", "Mile High", "Frontiers" ]
+						}, {
+							"city": "Kansas City",
+							"abbreviation": "KC",
+							"names": [ "Braves", "Fountains", "Bastions", "Boulevards", "Crusaders", "Conquerors" ]
+						}, {
+							"city": "St. Louis",
+							"abbreviation": "STL",
+							"names": [ "Arches", "Mounds", "Redbuds", "Mallards", "Sunbirds" ]
+						}, {
+							"city": "Wichita",
+							"abbreviation": "WIC",
+							"names": [ "Wizards", "Wind", "Pilots", "Wheelers", "Sharpshooters", "Wranglers" ]
+						}
+					]
+				}, {
+					"name": "Cowboy",
+					"teams": [
+						{
+							"city": "Little Rock",
+							"abbreviation": "LR",
+							"names": [ "Twisters", "Lizards", "Redhawks", "Reds", "Blues", "Greens" ]
+						}, {
+							"city": "Mexico City",
+							"abbreviation": "MC",
+							"names": [ "Muertos", "Skulls", "Aztecs", "Coyotes", "Palaces", "Matadors" ]
+						}, {
+							"city": "Roswell",
+							"abbreviation": "ROS",
+							"names": [ "Greys", "Airmen", "Moguls", "Flyers", "Saucers", "Beings" ]
+						}, {
+							"city": "Dallas",
+							"abbreviation": "DAL",
+							"names": [ "Dynamite", "Wranglers", "Saddlers", "Frontiers", "Donkeys", "Praetors" ]
+						}, {
+							"city": "Austin",
+							"abbreviation": "AUS",
+							"names": [ "Alphas", "Bandits", "Armadillos", "Anchors", "Weirdos" ]
+						}, {
+							"city": "Oklahoma City",
+							"abbreviation": "OKC",
+							"names": [ "Supersonics", "Tornados", "Lightning", "Osteologists", "Friends" ]
+						}, {
+							"city": "New Orleans",
+							"abbreviation": "NO",
+							"names": [ "Crescents", "Easies", "Jazz", "Fleurs", "Dukes", "Orcas", "Deltas" ]
+						}, {
+							"city": "San Antonio",
+							"abbreviation": "SA",
+							"names": [ "Alamos", "Animals", "Saddlers", "Deuces", "Tones", "Palmettos" ]
+						}, {
+							"city": "Houston",
+							"abbreviation": "HOU",
+							"names": [ "Apollos", "Gemini", "Asteroids", "Comets", "Meteors", "Magnolias" ]
+						}
+					]
+				}
+			]
+		}
+	]
+}

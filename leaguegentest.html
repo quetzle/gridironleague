@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>League Generator Test</title>
+	<style>
+		#conf0, #conf1 {
+			display: inline-block;
+			margin-right: 1em;
+		}
+	</style>
+</head>
+<body>
+	<button onClick="generateLeague()">Generate league</button>
+	<div id="content"></div>
+	<script src="leaguefile.js"></script>
+	<script>
+		var text = "";
+		var teamNames = [];
+		var league = leagueObject;
+		
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * Math.floor(max));
+		}
+		
+		function generateLeague() {
+			text = "";
+			text = text.concat("<h1>" + league.title + "</h1>");
+			
+			for (var i = 0; i < 2; i++) {
+				console.log("Conference " + i);
+				
+				var confTeams = [];
+				
+				text = text.concat("<div id=\"conf" + i + "\"><h2>" + league.conferences[i].name + "</h2>");
+				
+				for (var j = 0; j < 4; j++) {
+					console.log("Division " + j);
+					
+					confTeams = league.conferences[i].divisions[j].teams.slice();
+					
+					text = text.concat("<h3>" + league.conferences[i].divisions[j].name + "</h3>");
+					
+					for (var k = 0; k < 4; k++) {
+						console.log("Team " + k);
+						
+						var cityId = getRandomInt(confTeams.length);
+						var nameId = getRandomInt(confTeams[cityId].names.length);
+						
+						var cityText = confTeams[cityId].city;
+						var nameText = confTeams[cityId].names[nameId];
+						
+						while (teamNames.indexOf(nameText) != -1) {
+							console.log("Duplicate name " + nameText + " detected. Rerolling name...");
+							nameId = getRandomInt(confTeams[cityId].names.length);
+							nameText = confTeams[cityId].names[nameId];
+						}
+						
+						text = text.concat("<p>" + cityText + " " + nameText + "</p>");
+						
+						teamNames.push(nameText);
+						confTeams.splice(cityId, 1);
+					}
+				}
+				
+				text = text.concat("</div>");
+			}
+			
+			document.getElementById("content").innerHTML = text;
+		}
+	</script>
+</body>
+</html>
