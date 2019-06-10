@@ -31,7 +31,7 @@ var leagueObject = {
 						{
 							"city": "Detroit",
 							"abbreviation": "DET",
-							"names": [ "Destroyers", "Dynamite", "Dinosaurs", "Factory", "Doom", "Autos" ]
+							"names": [ "Doom" ]
 						}, {
 							"city": "Cincinnati",
 							"abbreviation": "CIN",
