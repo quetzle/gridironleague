@@ -138,7 +138,7 @@ var leagueObject = {
 				}, {
 					"name": "Plains",
 					"teams": [
-						{{
+						{
 							"city": "Omaha",
 							"abbreviation": "OMA",
 							"names": [ "Overlords" ]
