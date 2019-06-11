@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Team Generator Test</title>
+	<style>
+		#conf0, #conf1 {
+			display: inline-block;
+			margin-right: 1em;
+		}
+	</style>
+</head>
+<body onLoad="generateTeam()">
+	<button onClick="generateTeam()">Generate team</button>
+	<div id="content"></div>
+	<script src="teamgen.js"></script>
+	<script>
+		var text = "";
+		var positions = [["QB",1],["RB",2],["WR",3],["TE",1],["OL",5],["K",1],["DL",4],["LB",3],["CB",3],["S",2]];
+		
+		function textAppend(str) {
+			text = text.concat(str);
+		}
+		
+		function generateTeam() {
+			text = "";
+			textAppend("<h1>Starters</h1>");
+			
+			for (var i = 0; i < positions.length; i++) {
+				textAppend("<p><strong>" + positions[i][0] + "s: </strong>");
+				for (var j = 0; j < positions[i][1]; j++) {
+					textAppend(getName());
+					if (j + 1 != positions[i][1])
+						textAppend(", ");
+				}
+				textAppend("</p>");
+			}
+			
+			document.getElementById("content").innerHTML = text;
+		}
+	</script>
+</body>
+</html>
