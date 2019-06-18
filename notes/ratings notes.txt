@@ -1,0 +1,63 @@
+ALL PLAYERS
+
+development
+	- how fast the player's ratings go up, tends to go down past a certain age
+intelligence
+	- decision making, general boost to ability and big play potential
+speed
+	- straight-line speed
+agility
+	- turning, lateral moves, evasion
+strength
+	- break/make tackles, win blocks
+endurance
+	- lower fatigue, less frequent injuries
+awareness
+	- pocket presence, finding holes, following ball carrier
+catching
+	- make catches/interceptions, extends catch radius and reduces drop rate
+jumping
+	- defend passes, hurdle opponents
+tackling
+	- tackle opponents, less likely to be broken
+
+
+---
+
+POSITIONS
+
+QB
+ball control
+	- lower fumble rate
+accuracy
+	- higher completion rate, lower int rate
+throw power
+	- better accuracy at longer distances
+spiral/mechanics (?)
+	- lower drop rate
+
+RB/WR/TE
+ball control
+	- lower fumble rate
+contested catch
+	- catch rate in tight coverage
+
+OL
+pass block
+	- bonus on pass plays
+run block
+	- bonus on run plays
+effort
+	- pancaking ability, get back up if beat
+
+DL/LB
+run stopping
+	- bonus on run plays
+pass rushing
+	- bonus on pass plays
+
+LB/CB/S
+coverage
+	- ability to contest balls
+pursuit
+	- prevent breakaway plays

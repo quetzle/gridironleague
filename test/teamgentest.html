@@ -20,19 +20,29 @@
 			text = text.concat(str);
 		}
 		
-		function generateTeam() {
-			text = "";
-			textAppend("<h1>Starters</h1>");
+		function generateLineup() {
+			var lineup = "";
 			
 			for (var i = 0; i < positions.length; i++) {
-				textAppend("<p><strong>" + positions[i][0] + "s: </strong>");
+				lineup = lineup.concat("<p><strong>" + positions[i][0] + "s: </strong>");
 				for (var j = 0; j < positions[i][1]; j++) {
-					textAppend(getName());
+					lineup = lineup.concat(getName());
 					if (j + 1 != positions[i][1])
-						textAppend(", ");
+						lineup = lineup.concat(", ");
 				}
-				textAppend("</p>");
+				lineup = lineup.concat("</p>");
 			}
+			
+			return lineup;
+		}
+		
+		function generateTeam() {
+			text = "";
+			
+			textAppend("<h1>Starters</h1>");
+			textAppend(generateLineup());
+			textAppend("<h1>Backups</h1>");
+			textAppend(generateLineup());
 			
 			document.getElementById("content").innerHTML = text;
 		}

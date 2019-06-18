@@ -120,7 +120,7 @@ var leagueObject = {
 						}, {
 							"city": "London",
 							"abbreviation": "LON",
-							"names": [ "Monarchs", "Kings", "Queens", "Jaguars", "Silly-Nannies", "Knights", "Cavalry", "Lions" ]
+							"names": [ "Monarchs", "Kings", "Queens", "Jaguars", "Silly-Nannies", "Knights", "Cavalry", "Lions", "Loyals"]
 						}, {
 							"city": "Louisville",
 							"abbreviation": "LOU",
@@ -309,7 +309,7 @@ var leagueObject = {
 						}, {
 							"city": "Wichita",
 							"abbreviation": "WIC",
-							"names": [ "Wizards", "Wind", "Pilots", "Wheelers", "Sharpshooters", "Wranglers" ]
+							"names": [ "Wizards", "Wind", "Pilots", "Wheelers", "Sharpshooters", "Wranglers", "Wolverines" ]
 						}
 					]
 				}, {

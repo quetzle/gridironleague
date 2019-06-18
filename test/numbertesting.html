@@ -1,0 +1,11 @@
+<script>
+var numbs = "";
+console.time("goob");
+for (var i = 0; i < 300; i++) {
+	// numbs += "" + Math.floor(Math.pow((2 * Math.random() - 1) * 2.2, 2) + 22) + ",";
+	numbs += "" + Math.floor((19.7 + (Math.random() + Math.random() + Math.random()) / 3 * 5) + (-2 * Math.random() + 1) * .06) + ",";
+}
+console.log(numbs);
+
+console.timeEnd("goob");
+</script>
